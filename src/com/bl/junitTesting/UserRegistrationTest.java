@@ -7,9 +7,9 @@ public class UserRegistrationTest {
     private Assertions Assert;
 
     @Test
-    public void givenPasswordSpecialCharacterWhenShouldReturnTrue() {
+    public void givenPasswordShouldReturnTrueWhenSpecialCharacterHaveTakeAnyOne() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.passwordRule4();
+        boolean userTest = userRegistration.emailTest("abc+100@gmail.com");
         System.out.println(userTest);
         Assert.assertTrue(userTest);
     }
