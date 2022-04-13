@@ -7,9 +7,9 @@ public class UserRegistrationTest {
     private Assertions Assert;
 
     @Test
-    public void givenPhoneNumberWhenShouldReturnTrue() {
+    public void givenPasswordWhenShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.phoneNumber();
+        boolean userTest = userRegistration.password();
         System.out.println(userTest);
         Assert.assertTrue(userTest);
     }
